@@ -13,8 +13,6 @@ class SeriesController extends Controller
             'Greys Anatomy'
         ];
 
-        return view('listar-series', [
-            'series' => $series
-        ]);
+        return view('listar-series')->with('series', $series);
     }
 }
