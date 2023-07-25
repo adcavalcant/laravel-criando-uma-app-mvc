@@ -10,9 +10,13 @@ class SeriesController extends Controller
         $series=[
             'Punisher',
             'Lost',
-            'Greys Anatomy'
+            'Grey\'s Anatomy'
         ];
 
         return view('series.index')->with('series', $series);
+    }
+
+    public function create(){
+        return view('series.create');
     }
 }
